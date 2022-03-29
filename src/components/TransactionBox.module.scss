@@ -1,0 +1,41 @@
+.main{
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 95%;
+    margin-bottom: 2% !important;
+    *{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: rgba(255,255,255);
+    gap: 5%;
+    flex: 0 0 70%;
+    label{
+        font-size: 0.8rem;
+    }
+
+    i{
+        font-size: 1.2rem;
+    }
+    p{
+        font-size: 0.65rem;
+        color: rgba(255,255,255,0.6);
+    }
+}
+
+.right{
+    display: flex;
+    justify-content: flex-end;
+    h4{
+        font-weight: 500;
+    }
+}

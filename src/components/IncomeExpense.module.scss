@@ -1,0 +1,46 @@
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 55%;
+    margin: 0 auto;
+    margin-bottom: 3%;
+} 
+
+.income, .expense{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    gap: 20%;
+    margin: 0;
+    height: fit-content;
+    padding: 2% 8%;
+    border-radius: 10px;
+    *{
+        margin: 0;
+        line-height: 0.8rem;
+    }
+    p{
+        font-size: 0.4rem;
+    }
+    h4{
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+    i{
+        color: #fafafa;
+        font-size: 1.25rem;
+    }
+}
+
+.income{
+    i{
+        color: #00C897;
+    }
+}
+.expense{
+    i{
+        color: #E83A14;
+    }
+}

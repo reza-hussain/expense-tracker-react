@@ -1,0 +1,25 @@
+.main{
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+    padding: 2% 4%;
+
+    h1{
+        color: #ffffff;
+        font-size: 1.25rem;
+        margin-bottom: 0;
+    }
+
+    i{
+        font-size: 1.25rem;
+        display: flex;
+        justify-content: center;
+        color: #312866;
+        height: 1.25rem;
+        width: 0.8rem;
+        margin: 0;
+        padding: 0;
+        background-color: #3ebefb;
+        border-radius: 50%;
+    }
+}
