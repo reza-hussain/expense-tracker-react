@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
 .main{
     display: flex;
     justify-content: space-between;
@@ -12,13 +14,32 @@
     }
 }
 
+.delete{
+    display: flex;
+    background-color: #E83A14;
+    width: 0.5vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+    overflow: hidden;
+    flex:0 0 2%;
+    height: 5vh;
+    transition: flex 200ms ease;
+    color: transparent;
+    cursor: pointer;
+    &:hover{
+        flex: 0 0 10%;
+        color: white;
+    }
+}
+
 .left{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     color: rgba(255,255,255);
     gap: 5%;
-    flex: 0 0 70%;
+    flex: 0 0 60%;
     label{
         font-size: 0.8rem;
     }
@@ -34,6 +55,7 @@
 
 .right{
     display: flex;
+    flex: 0 0 20%;
     justify-content: flex-end;
     h4{
         font-weight: 500;

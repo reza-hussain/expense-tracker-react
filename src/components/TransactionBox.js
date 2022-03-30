@@ -1,11 +1,17 @@
 import React, { useContext } from 'react';
 import TransactionBoxStyles from './TransactionBox.module.scss';
+import { GlobalContext } from '../context/GlobalContext';
 
 function TransactionBox({transactions}) {
   const sign = transactions.amount < 0 ? '-' : '+';
 
+  const { deleteTransaction } = useContext(GlobalContext);
+
   return (
     <div className={TransactionBoxStyles.main}>
+      <div className={TransactionBoxStyles.delete}>
+        <i className='bi bi-trash-fill'
+        onClick={() => deleteTransaction(transactions.id)}></i></div>
       <div className={TransactionBoxStyles.left}>
         <i className="bi bi-facebook"></i>
         <div>

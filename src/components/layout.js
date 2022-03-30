@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './Card';
+import AddExpense from './addExpense';
 import Header from './Header';
 import IncomeExpense from './IncomeExpense';
 import LayoutStyles from './layout.module.scss';
