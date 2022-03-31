@@ -4,7 +4,7 @@ import AppReducer from './AppReducer'
 const initialState = {
     data:
         {
-            name: 'Reza Hussain',
+            name: 'Reza Hussain ',
             card: '576 9837 7638 1636',
             balance: '$2890',
             transactions: [
