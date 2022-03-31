@@ -1,3 +1,11 @@
+.addExpense{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2% 0%;
+}
+
 .main{
     width: 50%;
     display: flex;
@@ -7,9 +15,24 @@
     gap: 10%;
     color: white;
     flex-wrap: wrap;
-    z-index: -1;
 }
 
+.submit{
+    margin-top: 1.25rem;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+    color: #3ebefb;
+    border: 1px solid #3ebefb;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 200ms linear;
+
+    &:hover{
+        background-color: #3ebefb;
+        color: #2b1c63;
+    }
+    
+}
 
 .number{
     flex: 0 0 30%;

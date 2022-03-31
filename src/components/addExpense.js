@@ -19,6 +19,7 @@ function AddExpense() {
                 <input id="number" type="number" value={amount} onChange={(e) => setAmount(e.target.value)}/>
             </div>
         </form>
+        <button className={addStyles.submit}>{amount < 0 ? 'Add Expense' : 'Add Income'}</button>
     </div>
   )
 }
