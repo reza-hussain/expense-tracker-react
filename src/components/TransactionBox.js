@@ -9,9 +9,9 @@ function TransactionBox({transactions}) {
 
   return (
     <div className={TransactionBoxStyles.main}>
-      <div className={TransactionBoxStyles.delete}>
-        <i className='bi bi-trash-fill'
-        onClick={() => deleteTransaction(transactions.id)}></i></div>
+      <button onClick={() => deleteTransaction(transactions.id)}className={TransactionBoxStyles.delete}>
+        <i className='bi bi-trash-fill'></i>
+      </button>
       <div className={TransactionBoxStyles.left}>
         <i className="bi bi-facebook"></i>
         <div>

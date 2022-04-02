@@ -4,7 +4,7 @@ import TransactionStyles from './Transactions.module.scss';
 import { GlobalContext } from '../context/GlobalContext';
 
 function Transactions() {
-  const { data } = useContext(GlobalContext);
+  const { state } = useContext(GlobalContext);
   
   return (
     <>
@@ -14,7 +14,7 @@ function Transactions() {
           <a href="">See all</a>
         </div>
         <div className={TransactionStyles.content}>
-          {data.transactions.map(transaction => (<TransactionBox key={transaction.id} transactions={transaction}/>)
+          {state.transactions.map(transaction => (<TransactionBox key={transaction.id} transactions={transaction}/>)
             )}
         </div>
     </div>

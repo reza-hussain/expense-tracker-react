@@ -4,7 +4,7 @@ import { GlobalContext } from '../context/GlobalContext';
 import CardStyles from './Card.module.scss'
 
 export default function Card() {
-  const { data } = useContext(GlobalContext);
+  const { state } = useContext(GlobalContext);
   
   return (
     <div className={CardStyles.main}>
@@ -12,18 +12,18 @@ export default function Card() {
             <div className={CardStyles.name}>
                 <div>
                     <p>Card Name</p>
-                    <h4>{data.name}</h4>
+                    <h4>{state.name}</h4>
                 </div>
                 <i className="bi bi-apple"></i>
             </div>
 
             <div className={CardStyles.number}>
-                <h4>{data.card}</h4>
+                <h4>{state.card}</h4>
             </div>
             
             <div className={CardStyles.balance}>
                 <p>Card Balance</p>
-                <h4>{data.balance}</h4>
+                <h4>{state.balance}</h4>
             </div>
         </div>
     </div>

@@ -4,16 +4,15 @@ import IEStyles from './IncomeExpense.module.scss';
 
 function IncomeExpense() {
 
-  const { data } = useContext(GlobalContext)
+  const { state } = useContext(GlobalContext)
   // First let's map each transaction
 
-  const amounts = data.transactions.map((transaction) => transaction.amount);
+  const amounts = state.transactions.map((transaction) => transaction.amount);
 
   //To calculate the total we use the JavaScript Reduce Function, which has an accumulator,
   //that records the previous returned value and we add that previous value to the current value
 
   const total = amounts.reduce((acc, amount) => acc + amount, 0).toFixed(2); //We don't need this variable.
-  console.log(total);
 
   // Income is obtained by filtering all the amounts that are greater than 0 and then using the reduce
   //function to calculate the sum.

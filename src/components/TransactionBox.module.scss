@@ -33,6 +33,11 @@
     }
 }
 
+button{
+    border: none;
+    outline: none;
+}
+
 .left{
     display: flex;
     justify-content: flex-start;
